@@ -1,0 +1,14 @@
+# Ignore node_modules (heavy + unnecessary to push)
+node_modules/
+
+# Ignore environment files (secret keys, DB URIs)
+.env
+
+# Optional: ignore logs
+*.log
+
+# Optional: ignore OS-specific files
+.DS_Store
+
+# Ignore build artifacts (if any build step is used)
+dist/
