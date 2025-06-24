@@ -21,7 +21,8 @@ next()
 app.use(express.json())
 
 app.use(cors({
-    origin: 'http://localhost4000',
+    origin: 'http://localhost:3000',
+     credentials: true 
     
 }))
 
