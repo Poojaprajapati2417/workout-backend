@@ -21,7 +21,7 @@ next()
 app.use(express.json())
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://workout-frontend-omega.vercel.app',
      credentials: true 
     
 }))
