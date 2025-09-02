@@ -5,7 +5,7 @@ import workoutroutes from "./routes/workoutroutes.js"
 import userroutes from "./routes/userroutes.js"
 import connectdb from "./db/db.js"
 import cors from "cors"
-
+import contactroutes from "./routes/ContactRoute.js"
 
 // express app
 const app = express();
@@ -21,7 +21,7 @@ next()
 app.use(express.json())
 
 app.use(cors({
-    origin: 'https://workout-frontend-omega.vercel.app',
+    origin: 'http://localhost:3000',
      credentials: true 
     
 }))
@@ -40,7 +40,7 @@ app.use("/workouts",workoutroutes)
 
 app.use("/user",userroutes)
 
-
+app.use("/workout",contactroutes)
 //listening in port
 
 connectdb()
